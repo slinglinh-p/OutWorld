@@ -16,7 +16,6 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
  
 :root {
-    --theme-id: "outworld";
     --header-title: "The OutWorld";
     --header-subtitle: "世界的外面？";
 body-font: Inter, "Noto Sans SC", "Noto Sans TC", Arimo, Verdana, Geneva, sans-serif;
@@ -52,129 +51,59 @@ body-font: Inter, "Noto Sans SC", "Noto Sans TC", Arimo, Verdana, Geneva, sans-s
 #side-bar .side-block div a img {
     filter: grayscale(100%);
 }
- 
+
+.code {
+    background-color: rgb(161, 161, 161);
+    padding: 0.1rem 1rem;
+    margin: 0.5rem 0 0.5rem 0.25rem;
+    box-shadow: 0.05rem 0.1rem 0.3rem rgba(255, 255, 255, .25);
+}
+
 .blockquote {
     box-shadow: 0.05rem 0.1rem 0.3rem rgba(255, 255, 255, .25);
+    color: rgb(0, 0, 0);
 }
  
 .styled-quote {
-    background-color: rgb(var(--quote-monochrome));
+    background-color: rgb(255, 255, 255);
     border-left: 0.5rem solid rgba(var(--nationarea-monochrome));
+    color: rgb(0, 0, 0);
     padding: 0.1rem 1rem;
     margin: 0.5rem 0 0.5rem 0.25rem;
     box-shadow: 0.05rem 0.1rem 0.3rem rgba(255, 255, 255, .25);
 }
  
 .dark-styled-quote {
-    background-color: rgb(var(--nationarea-monochrome));
-    border-left: 0.5rem solid rgba(var(--quote-monochrome));
-    color: rgb(var(--white-monochrome));
+    background-color: rgb(0, 0, 0);
+    border-left: 0.5rem solid rgba(255, 255, 255);
     padding: 0.1rem 1rem;
     margin: 0.5rem 0 0.5rem 0.25rem;
     box-shadow: 0.05rem 0.1rem 0.3rem rgba(255, 255, 255, .25);
 }
  
 .dark-styled-quote a {
-    color: rgb(var(--swatch-menubg-medium-color));
+    color: rgb(255, 255, 255);
 }
  
 .lightblock {
-    background-color: rgb(var(--quote-monochrome));
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 0.01rem 1rem;
     margin: 0.5rem 0 0.5rem 0.25rem;
     box-shadow: 0 0.2rem 0.3rem rgba(255, 255, 255, .25);
 }
  
 .darkblock {
-    background-color: rgb(var(--light-gray-monochrome));
-    color: rgb(var(--white-monochrome));
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 0.01rem 1rem;
     margin: 0.5rem 0 0.5rem 0.25rem;
     box-shadow: 0 0.2rem 0.3rem rgba(255, 255, 255, .25);
 }
  
 .darkblock a {
-    color: rgb(var(--swatch-menubg-medium-color));
+    color: rgb(255, 255, 255);
 }
- 
-#main-content .paper {
-    box-shadow: 0.05rem 0.15rem 0.38rem rgba(255,255,255,.3);
-    padding: 2em;
-    background: #000;
-    min-height: 42em;
-    position: relative;
-    margin: 1em auto
-}
- 
-.paper-group {
-    counter-reset: paper
-}
- 
-.paper::after {
-    content: counter(paper);
-    display: block;
-    text-align: center;
-    color: #aaa;
-    position: absolute;
-    bottom: 1em;
-    left: 0;
-    right: 0;
-    font-weight: bolder
-}
- 
-@media screen and (min-width: 56.25rem) {
-    .paper { width: 65%; padding: 2em }
-}
- 
-.paper h1 {
-    font-size: 180%;
-    border-bottom: 2px solid #aaa
-}
- 
-div.classic-blockquote {
-    border: dashed 0.0625rem rgba(var(--nationarea-monochrome), 0.75);
-    box-shadow: none;
-}
- 
-.titleblock {
-        background-color: rgb(var(--quote-monochrome));
-        color:rgb(255,255,255);
-        padding: 0.5rem 1rem 0.10rem;
-        margin: 1.5rem 0rem 0.5rem 0rem;
-        box-shadow: 0 0.2rem 0.3rem rgba(255,255,255,.5);
-        border: solid rgb(var(--nationarea-monochrome)) 2px;
-     }
- 
-.titlebox{
-       color: rgb(0,0,0);
-       position: relative;
-       top: -1.6rem;
-       background-color: rgb(var(--nationarea-monochrome));
-       padding: 0.25rem 1rem;
-       line-height: 0.1rem;
-     }
- 
-.dark-titleblock {
-        background-color: rgb(var(--nationarea-monochrome));
-        color:rgb(0,0,0);
-        padding: 0.5rem 1rem 0.10rem;
-        margin: 1.5rem 0rem 0.5rem 0rem;
-        box-shadow: 0 0.2rem 0.3rem rgba(255,255,255,.5);
-        border: solid rgb(var(--quote-monochrome)) 2px;
-     }
- 
-.dark-titleblock a {
-color: rgb(95, 91, 85);
-}
- 
-     .dark-titlebox {
-       color: rgb(var(--black-monochrome));
-       position: relative;
-       top: -1.6rem;
-       background-color: rgb(var(--quote-monochrome));
-       padding: 0.25rem 1rem;
-       line-height: 0.1rem;
-     }
  
 #container {
     background-image: radial-gradient(circle, transparent 50%, transparent 0);
